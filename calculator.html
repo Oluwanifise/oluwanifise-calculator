@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/calculator.css">
+    <title>Oluwanifise's Scientific Calculator</title>
+  </head>
+  <body onload="document.getElementById('changed2').style.display='none'">
+    <header class="calculator-header">
+      <h1>Scientific Calculator</h1>
+      <p>Try it!</p>
+    </header>
+    <div class="calculator">
+      <div class="result" id="res"></div>
+      <input type="text" name="inputBox" id="input" value=""/>
+      <div id="changed">
+        <div class="one">
+          <button type="button" name="square" onclick="square();">x<sup>2</sup></button>
+
+          <button type="button" name="sine" onclick="sine();">sin</button>
+          <button type="button" name="cosine" onclick="cosine();">cos</button>
+          <button type="button" name="tan" onclick="tangent();">tan</button>
+        </div>
+        <div class="two">
+          <button type="button" name="root" onclick="squareRoot();">&#8730;</button>
+          <button type="button" name="anti-log" onclick="antiLog();">10<sup>x</sup></button>
+          <button type="button" name="log" onclick="log();">log</button>
+          <button type="button" name="exp" onclick="exp();">EXP</button>
+          <button type="button" name="mod" value=" % " onclick="val(this);">mod</button>
+        </div>
+      </div>
+      <div id="changed2">
+        <div class="onechanged">
+          <button type="button" name="cube" onclick="cube();">x<sup>3</sup></button>
+          <button type="button" name="arcsine" onclick="arcSine();">sin<sup>-1</sup></button>
+
+
+        </div>
+        <div class="two">
+          <button type="button" name="inverse" onclick="inverse();">1/x</button>
+          <button type="button" name="euler" onclick="euler();">e<sup>x</sup></button>
+          <button type="button" name="ln" onclick="ln();">ln</button>
+          <button type="button" name="arctan" onclick="arcTan();">tan<sup>-1</sup></button>
+          <button type="button" name="arccosine" onclick="arcCosine();">cos<sup>-1</sup></button>
+        </div>
+      </div>
+      <div class="three">
+        <button type="button" name="change" onclick="more();">&#8593;</button>
+        <button type="button" name="clear" onclick="Clear();">CE</button>
+        <button type="button" name="clear-all" onclick="clearAll();">C</button>
+        <button type="button" name="back" onclick="back();">&#8656;</button>
+        <button type="button" name="divide" value=" / " onclick="val(this);">&#8725;</button>
+      </div>
+      <div class="four">
+        <button type="button" name="pi" onclick="PI();">&#960;</button>
+        <button type="button" name="seven" value="7" onclick="val(this);">7</button>
+        <button type="button" name="eight" value="8" onclick="val(this);">8</button>
+        <button type="button" name="nine" value="9" onclick="val(this);">9</button>
+        <button type="button" name="times" value=" * " onclick="val(this);">X</button>
+      </div>
+      <div class="five">
+        <button type="button" name="factorial" onclick="fac();">n!</button>
+        <button type="button" name="four" value="4" onclick="val(this);">4</button>
+        <button type="button" name="five" value="5" onclick="val(this);">5</button>
+        <button type="button" name="six" value="6" onclick="val(this);">6</button>
+        <button type="button" name="minus" value=" - " onclick="val(this);">&#8722;</button>
+      </div>
+      <div class="six">
+        <button type="button" name="plus-minus" onclick="changeSign();">&#8723;</button>
+        <button type="button" name="one" value="1" onclick="val(this);">1</button>
+        <button type="button" name="two" value="2" onclick="val(this);">2</button>
+        <button type="button" name="three" value="3" onclick="val(this);">3</button>
+        <button type="button" name="plus" value=" + " onclick="val(this);">+</button>
+      </div>
+      <div class="seven">
+        <button type="button" name="open" value="(" onclick="val(this);">(</button>
+        <button type="button" name="close" value=")" onclick="val(this);">)</button>
+        <button type="button" name="zero" value="0" onclick="val(this);">0</button>
+        <button type="button" name="point" onclick="point();">.</button>
+        <button type="button" name="equal" onclick="equals();">=</button>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
