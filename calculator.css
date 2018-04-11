@@ -15,7 +15,7 @@ header {
 }
 button {
   background-color: #EAEDF0;
-  border-radius: 3px;
+  border-radius: 7px;
   height: 37px;
   width: 37px;
   font-size: 80%;
@@ -23,23 +23,24 @@ button {
 input {
   width: 200px;
   height: 35px;
-  border-radius: 3px;
+  border-radius: 8px;
   text-align: right;
   font-size: 100%;
 }
 .calculator {
   border: 1px solid grey;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 50px;
   background-color: white;
 }
-#res {
+#result {
   text-align: right;
   width: 200px;
   height: 30px;
   padding: 7px 0 7px 7px;
 }
-.onechanged, .one {
-  display: flex;
-  justify-content: space-between;
+.side-note {
+  font-style: italic;
+  padding-top: 3px;
+  margin: auto;
 }
