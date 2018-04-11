@@ -11,12 +11,12 @@
       <p>Try it!</p>
     </header>
     <div class="calculator">
-      <div class="result" id="res"></div>
-      <input type="text" name="inputBox" id="input" value=""/>
+      <div class="result" id="result"></div>
+      <input type="text" name="inputBox" id="input" value="0"/>
       <div id="changed">
         <div class="one">
           <button type="button" name="square" onclick="square();">x<sup>2</sup></button>
-
+          <button type="button" name="abs" onclick="abs();">| x |</button>
           <button type="button" name="sine" onclick="sine();">sin</button>
           <button type="button" name="cosine" onclick="cosine();">cos</button>
           <button type="button" name="tan" onclick="tangent();">tan</button>
@@ -30,18 +30,20 @@
         </div>
       </div>
       <div id="changed2">
-        <div class="onechanged">
+        <div class="oneChanged">
           <button type="button" name="cube" onclick="cube();">x<sup>3</sup></button>
           <button type="button" name="arcsine" onclick="arcSine();">sin<sup>-1</sup></button>
-
-
+          <button type="button" name="arccosine" onclick="arcCosine();">cos<sup>-1</sup></button>
+          <button type="button" name="arctan" onclick="arcTan();">tan<sup>-1</sup></button>
+          <button type="button" name="arccosine" onclick="inc();">++</button>
         </div>
-        <div class="two">
+        <div class="twoChanged">
           <button type="button" name="inverse" onclick="inverse();">1/x</button>
           <button type="button" name="euler" onclick="euler();">e<sup>x</sup></button>
           <button type="button" name="ln" onclick="ln();">ln</button>
-          <button type="button" name="arctan" onclick="arcTan();">tan<sup>-1</sup></button>
-          <button type="button" name="arccosine" onclick="arcCosine();">cos<sup>-1</sup></button>
+          <button type="button" name="percent" onclick="percent();">%</button>
+          <button type="button" name="arccosine" onclick="dec()();">--</button>
+
         </div>
       </div>
       <div class="three">
@@ -79,7 +81,9 @@
         <button type="button" name="point" onclick="point();">.</button>
         <button type="button" name="equal" onclick="equals();">=</button>
       </div>
+
     </div>
+    <p class="side-note">Note: this calculator only evaluates two values at a time</p>
     <script src="calculator.js"></script>
   </body>
 </html>
